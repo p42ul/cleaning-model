@@ -1,4 +1,3 @@
-import matplotlib.pyplot as plt
 
 from mesa import Agent, Model
 from mesa.time import RandomActivation
@@ -38,7 +37,6 @@ def main():
     for i in range(10):
         m.step()
     agent_wealth = [a.wealth for a in m.schedule.agents]
-    plt.hist(agent_wealth)
 
 if __name__ == '__main__':
     main()
